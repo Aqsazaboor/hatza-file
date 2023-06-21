@@ -368,6 +368,13 @@ body {
   .engage-models.row {
     flex-wrap: wrap;
   }
+  .em-card {
+    min-height: calc(85% - 1rem) !important;
+  }
+  .hatzs-fixed-price {
+    max-width: 400px;
+    width: 100%;
+  }
 }
 
 .em-card svg {
@@ -378,5 +385,9 @@ body {
 @media screen and (max-width: 1000px) and (min-width: 375px) {
   .engage-models-row {
     flex-wrap: wrap;
+    gap: 56px;
+  }
+  .em-card svg {
+    margin-left: 122px;
   }
 }
