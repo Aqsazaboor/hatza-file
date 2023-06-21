@@ -146,6 +146,10 @@ body {
   color: #4f4f4f;
   margin-bottom: 2.125rem;
 }
+.hatzs-fixed-price {
+  max-width: 520px;
+  width: 100%;
+}
 
 .owc-content {
   max-width: 50%;
@@ -234,9 +238,9 @@ body {
   }
   .owc-content {
     max-width: 100%;
-    width: 100%;
-    padding-left: 30px;
-    padding-top: 20px;
+
+    padding-left: 0px;
+    padding-top: 0px;
 
     text-align: center;
   }
@@ -258,10 +262,20 @@ body {
     height: 100%;
   }
 }
+@media screen and (max-width: 767px) and (min-width: 567px) {
+  .hatzs-fixed-price {
+    max-width: 480px;
+    width: 100%;
+  }
+}
 @media screen and (max-width: 566px) and (min-width: 375px) {
   .hatzs-work-swiper {
     width: 80%;
     height: 100%;
+  }
+  .hatzs-fixed-price {
+    max-width: 351px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 566px) and (min-width: 500px) {
@@ -326,10 +340,7 @@ body {
   justify-content: center;
   gap: 40px;
 }
-.hatzs-fixed-price {
-  max-width: 550px;
-  width: 100%;
-}
+
 .em-card {
   display: flex;
   flex-direction: column;
@@ -368,13 +379,11 @@ body {
   .engage-models.row {
     flex-wrap: wrap;
   }
-  .em-card {
-    min-height: calc(85% - 1rem) !important;
-  }
-  .hatzs-fixed-price {
-    max-width: 400px;
+
+  /* .hatzs-fixed-price {
+    max-width: 337px;
     width: 100%;
-  }
+  } */
 }
 
 .em-card svg {
@@ -382,7 +391,7 @@ body {
   justify-content: end;
   margin-left: 179px;
 }
-@media screen and (max-width: 1000px) and (min-width: 375px) {
+@media screen and (max-width: 1024px) and (min-width: 375px) {
   .engage-models-row {
     flex-wrap: wrap;
     gap: 56px;
@@ -390,4 +399,13 @@ body {
   .em-card svg {
     margin-left: 122px;
   }
+  .em-card {
+    min-height: calc(85% - 1rem) !important;
+  }
 }
+/* @media screen and (max-width: 1024px) and (min-width: 767px) {
+  .hatzs-fixed-price {
+    max-width: 400px;
+    width: 100%;
+  } */
+/* } */
